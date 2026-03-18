@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: rain-dev
+
+    ports:
+      - "5000:5000"
+
+    volumes:
+      - .:/app   # 🔥 live reload (VERY IMPORTANT)
+
+    environment:
+      - PYTHONUNBUFFERED=1
+
+    command: python app.py

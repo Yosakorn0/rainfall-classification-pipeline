@@ -5,9 +5,9 @@ FROM python:3.9-slim
 WORKDIR /app
 
 # 3. Install dependencies first (better caching)
-COPY requirements.txt ./
+COPY requirement.txt ./
 RUN pip install --no-cache-dir --upgrade pip \
-    && pip install --no-cache-dir -r requirements.txt
+    && pip install --no-cache-dir -r requirement.txt
 
 # 4. Copy the rest of the app
 COPY . .
