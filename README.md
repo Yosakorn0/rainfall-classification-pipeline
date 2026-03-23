@@ -2,6 +2,14 @@
 
 This project develops a machine learning model to predict next-day rainfall based on historical weather data. It covers exploratory data analysis (EDA), feature preprocessing, and training a binary classification model. A lightweight web interface is included for demonstrating predictions.
 
+## 🚀 Live Demo
+Access the deployed application here:
+```
+http://192.41.170.112:6512
+```
+⚠️ Make sure you are connected to the appropriate network if the service is not publicly accessible.
+
+
 ## 🚀 Features
 
 - 📊 Exploratory Data Analysis (EDA) on weather dataset
@@ -121,5 +129,4 @@ docker run -p 5000:5000 rain-prediction
 
 ## 👤 Author
 
-Abdullah Al Muntakim
 Yosakorn Sirisoot
